@@ -1,0 +1,20 @@
+{
+  "name": "branch-play",
+  "version": "1.0.0",
+  "description": "this repo is used to test branch merge testings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conqueror23/branch-play.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conqueror23/branch-play/issues"
+  },
+  "homepage": "https://github.com/conqueror23/branch-play#readme"
+}
