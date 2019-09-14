@@ -38,5 +38,25 @@ const getMediam  = (array1,array2)=>{
 
 }
 
-let mediam1 = getMediam(array1,array2);
-console.log(mediam1)
+
+
+// for two sorted array
+// need to fix the crossing issues
+const findMedianSortedArrays = function(nums1, nums2) {
+    // crossing issues
+    if()
+    let totalLen = nums1.length+ nums2.length
+    let totalArray = [...nums1,...nums2]
+    let mediam = 0;
+    let mediamInd  = Math.floor(totalLen/2)
+    if(totalLen %2== 0){
+        mediam = (totalArray[mediamInd]+totalArray[mediamInd+1])/2
+    }else[
+        mediam = totalArray[mediamInd]
+    ]
+    return mediam
+
+};
+
+let mediam2  = findMedianSortedArrays(array1,array2);
+console.log(mediam2)
