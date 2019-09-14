@@ -11,7 +11,7 @@ const forSolution= (array,target)=>{
                   solution.push(so)  
                 }
             // }
-        }
+        } 
     }
 return solution;
 }
