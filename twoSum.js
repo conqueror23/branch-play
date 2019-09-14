@@ -29,4 +29,83 @@ const  solution1  = function(nums, target) {
 
 let sol1 = solution1(array,target )
 
-console.log(sol1)
+
+// better solution 3
+
+const twoSum3 = function(nums, target) {
+    const seen = {};
+    for (let i = 0; i < nums.length; i++) {
+        const foundAt = seen[nums[i]];
+        if (typeof foundAt !== 'undefined' && foundAt !== i) return [foundAt, i];
+        seen[target - nums[i]] = i;
+    }
+    return [];
+};
+
+// let sol3 =twoSum3(array,target);
+
+// console.log(sol3);
+
+const solution40s = function(nums, target) {
+    var map = {};
+    for (var i = 0; i < nums.length; i++) {
+        var num2 = target - nums[i];
+        if (map[num2] || map[num2] === 0) {
+            return [map[num2], i];
+        }
+        map[nums[i]] = i;
+    }
+};
+
+// let sol40 = solution40s (array,target);
+// console.log(sol40)
+
+const  twoSum2nd = function(nums, target) {
+    var dict = {};
+    for (var i = 0; i < nums.length; i++){
+        dict[nums[i]] = i;
+    }
+    for (var j = 0; j < nums.length; j++){
+        var first = target - nums[j];
+        if (dict[first] && j != dict[first]){
+            return [j, dict[first]];
+        }
+    }
+    
+};
+
+// let twoSum2ndSol = twoSum2nd(array,target);
+// console.log(twoSum2ndSol);
+
+
+// twoSumBest 
+
+const  twoSumBest = function(nums, target) {
+    let map = {};
+    for (let i = 0; i < nums.length; i++) {
+        map[(nums[i]).toString()] = i;
+    }
+    for (let i = 0; i < nums.length; i++) {
+        let other = target - nums[i];
+        if (map.hasOwnProperty(other) && map[other] != i) {
+            return [i, map[other]];
+        }
+    }
+}
+// let twoSumBestRes = twoSumBest(array,target);
+// console.log(twoSumBestRes)
+
+// dicitonary some how  kind of dictionary in the js?
+// let dict1 ={};
+// dict1[1]= 'kinds ';
+// dict1[[2]] = 'jsut ';
+
+// console.log(dict1);
+
+// // map way? get the attributes? s
+// let map1 ={};
+
+// map1[2]  = 'just her e';
+// let reski =map1.hasOwnProperty('2')
+// console.log(reski);
+
