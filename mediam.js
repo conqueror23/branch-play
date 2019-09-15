@@ -44,7 +44,7 @@ const getMediam  = (array1,array2)=>{
 // need to fix the crossing issues
 const findMedianSortedArrays = function(nums1, nums2) {
     // crossing issues
-    if()
+    // if()
     let totalLen = nums1.length+ nums2.length
     let totalArray = [...nums1,...nums2]
     let mediam = 0;
