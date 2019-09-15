@@ -108,8 +108,32 @@ const priviateLCS = input => {
   }
   return longest;
 };
-console.log(input);
-let longestLCS = priviateLCS(input);
-console.log(longestLCS);
+// quickest solutions
+const longestConsecutiveQ = function(nums) {
+  let seen = new Set(nums);
+  let maxCount = 0;
 
-// priviateLCS(input)
+  for (let num of seen) {
+    if (seen.size <= maxCount) break;
+
+    let currCount = 1;
+
+    seen.delete(num);
+
+    for (let curr = num - 1; seen.has(curr); curr--) {
+      currCount++;
+      seen.delete(curr);
+    }
+    for (let curr = num + 1; seen.has(curr); curr++) {
+      currCount++;
+      seen.delete(curr);
+    }
+
+    maxCount = Math.max(currCount, maxCount);
+  }
+
+  return maxCount;
+};
+
+let result = longestConsecutiveQ(input)
+console.log(result);
