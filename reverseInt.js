@@ -19,8 +19,4 @@ let test = 1534236469;
 let re = reversInt(test);
 console.log(re);
 
-<<<<<<< HEAD
-console.log(2**30)
-=======
 console.log(2 ** 30);
->>>>>>> ead89e37b0069f6ad3999324656c67724fd12b7f

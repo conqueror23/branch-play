@@ -124,6 +124,7 @@ const longestConsecutiveQ = function(nums) {
       currCount++;
       seen.delete(curr);
     }
+    console.log(seen)
     maxCount = Math.max(currCount, maxCount);
   }
   return maxCount;

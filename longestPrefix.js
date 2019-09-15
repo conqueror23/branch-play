@@ -20,7 +20,6 @@ const longestPre = strArray => {
   for(let wordIndex = 1;wordIndex< wordPos.length;wordIndex++){
     for (let charPos = 0; charPos < miniLength; charPos++) {
       if(currentCharacter == stringArray[wordIndex][charPos])
-       
       }
    }
   
