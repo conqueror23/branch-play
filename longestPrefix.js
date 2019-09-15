@@ -12,14 +12,17 @@ const longestPre = strArray => {
     }
     return mini;
   });
-  // miniLength is the length you would find the most
-  for (let pos = 0; pos < miniLength; pos++) {
-    // get the words in the same time??
-     for(let index = 0;index< pos.length;index++){
-        
 
-        }
-     }
+  // cannot do like this you may only need to find the right way to display that out s
+
+  let currentCharacter  = stringArray[0][charPos];
+  // miniLength is the length you would find the most
+  for(let wordIndex = 1;wordIndex< wordPos.length;wordIndex++){
+    for (let charPos = 0; charPos < miniLength; charPos++) {
+      if(currentCharacter == stringArray[wordIndex][charPos])
+       
+      }
+   }
   
   }
 
