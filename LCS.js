@@ -129,5 +129,5 @@ const longestConsecutiveQ = function(nums) {
   return maxCount;
 };
 
-let result = longestConsecutiveQ(input)
+let result = longestConsecutiveQ(input);
 console.log(result);

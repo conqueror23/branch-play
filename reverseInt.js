@@ -15,8 +15,8 @@ const reversInt = x => {
   }
   return final;
 };
-let test =1534236469;
+let test = 1534236469;
 let re = reversInt(test);
 console.log(re);
 
-console.log(2**30)
+console.log(2 ** 30);
