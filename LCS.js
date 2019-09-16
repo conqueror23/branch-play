@@ -55,7 +55,6 @@ const lcsSet = input => {
 // lcsSet(input)
 // console.log(quickSort(input))
 // console.log(lcs(input))
-
 const longestConsecutive = function(nums) {
   if (nums.length === 0) return 0;
   nums = [...new Set(nums)];
@@ -76,7 +75,6 @@ const longestConsecutive = function(nums) {
   }
   return Math.max(curCons, highestCons);
 };
-
 const longestConsecutive2 = nums => {
   const set = new Set(nums);
   let longest = 0;
