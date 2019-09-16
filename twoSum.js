@@ -67,6 +67,7 @@ const twoSum2nd = function(nums, target) {
   for (var i = 0; i < nums.length; i++) {
     dict[nums[i]] = i;
   }
+  console.log(dict)
   for (var j = 0; j < nums.length; j++) {
     var first = target - nums[j];
     if (dict[first] && j != dict[first]) {
@@ -75,8 +76,8 @@ const twoSum2nd = function(nums, target) {
   }
 };
 
-// let twoSum2ndSol = twoSum2nd(array,target);
-// console.log(twoSum2ndSol);
+let twoSum2ndSol = twoSum2nd(array,target);
+console.log(twoSum2ndSol);
 
 // twoSumBest
 

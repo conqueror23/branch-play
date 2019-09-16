@@ -100,12 +100,15 @@ const priviateLCS = input => {
       let next = ele + 1;
       while (lcs.has(next)) {
         next += 1;
-      }
+      } 
       longest = Math.max(longest, next - ele);
     }
   }
   return longest;
 };
+
+console.log(priviateLCS(input))
+
 // quickest solutions
 const longestConsecutiveQ = function(nums) {
   let seen = new Set(nums);
@@ -128,5 +131,5 @@ const longestConsecutiveQ = function(nums) {
   return maxCount;
 };
 
-let result = longestConsecutiveQ(input);
-console.log(result);
+// let result = longestConsecutiveQ(input);
+// console.log(result);
