@@ -5,7 +5,7 @@ let strings1 = "thisisadog";
 let dictionary1 = ["this", "is", "a", "dog"];
 
 const splitString = (str1, dict) => {
-  let desc = str1.split("");
+  let desc = str1.split("");()
   // need to concat to make a word and these word should be inside the dictionary
 
   console.log(split);
@@ -33,8 +33,6 @@ const wordBreak = (s, wordDict) => {
   //   console.log(dp);
   return dp[s.length];
 };
-// let result = wordBreak(strings1, dictionary1);
-// console.log(result)
 
 const wordBreak2nd = function(s, wordDict) {
   const dp = [true];
