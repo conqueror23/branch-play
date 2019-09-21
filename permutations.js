@@ -88,19 +88,21 @@ const permuteQ = nums => {
   let visited = new Array(nums.length).fill(0);
   helper(nums, 0, visited, [], res);
   return res;
-  function helper(nums, level, visited, temp, res) {
+  function helper(nums, level, visited, temp, res)  {
     if (level === nums.length) {
       res.push(temp.slice());
-      return;
+      return; 
     }
     for (let i = 0; i < nums.length; i++) {
       if (visited[i] === 1) continue;
       visited[i] = 1;
       temp.push(nums[i]);
-      //console.log(temp)
+      console.log(temp)
       helper(nums, level + 1, visited, temp, res);
       temp.pop();
       visited[i] = 0;
     }
   }
 };
+
+permuteQ(array1)

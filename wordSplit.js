@@ -4,13 +4,7 @@ let strings1 = "thisisadog";
 
 let dictionary1 = ["this", "is", "a", "dog"];
 
-const splitString = (str1, dict) => {
-  let desc = str1.split("");()
-  // need to concat to make a word and these word should be inside the dictionary
 
-  console.log(split);
-  // console.log(desc)
-};
 
 const wordBreak = (s, wordDict) => {
   if (!s && !wordDict.length) {
@@ -59,6 +53,9 @@ const wordBreak2nd = function(s, wordDict) {
   return !!dp.pop();
 };
 
+let res = wordBreak2nd(sen1,dictionary1)
+console.log(res)
+
 // best soluiton
 var wordBreakBest = function(s, wordDict) {
   const mem = {};
@@ -69,7 +66,6 @@ var wordBreakBest = function(s, wordDict) {
   }
   return breakWord(s, hashWordDict, mem, maxLength);
 };
-
 const breakWord = (s, wordDict, mem, maxLength) => {
   if (s === "") return true;
   if (mem[s] !== undefined) return mem[s];
@@ -88,7 +84,6 @@ const breakWord = (s, wordDict, mem, maxLength) => {
   mem[s] = false;
   return false;
 };
-
 const getMaxLength = wordDict => {
   let max = 0;
   for (w of wordDict) {
